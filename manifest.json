@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "name": "Mark Now",
+    "description": "记录灵感",
+    "icons": {
+        "16": "/image/mark.png",
+        "32": "/image/mark.png",
+        "48": "/image/mark.png",
+        "128": "/image/mark.png"
+    },
+    "background": {
+        "service_worker": "/background.js"
+    },
+    "permissions": [
+        "storage","activeTab","scripting"
+    ],
+    "action": {
+        "default_popup": "/popup.html",
+        "default_icon": {
+            "16": "/image/mark.png",
+            "32": "/image/mark.png",
+            "48": "/image/mark.png",
+            "128": "/image/mark.png"
+        }
+    },
+    "options_page": "options.html"
+}
